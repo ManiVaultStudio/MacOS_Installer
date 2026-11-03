@@ -1,0 +1,13 @@
+{
+  "columns": [
+    "Run ID",
+    "Profile ID",
+    "Action",
+    "Started UTC",
+    "Finished UTC",
+    "Status",
+    "DMG path",
+    "Summary"
+  ],
+  "records": []
+}

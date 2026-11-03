@@ -1,0 +1,550 @@
+{
+  "columns": [
+    "Profile ID",
+    "Dependency",
+    "Kind",
+    "Version",
+    "Required"
+  ],
+  "records": [
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "openmp",
+      "Kind": "recipe",
+      "Version": "21.1.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "lz4",
+      "Kind": "recipe",
+      "Version": "1.9.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "flann",
+      "Kind": "recipe",
+      "Version": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "hdf5-zlib",
+      "Kind": "recipe",
+      "Version": "HDF5 1.14.6 / zlib 1.3.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "cups",
+      "Kind": "recipe",
+      "Version": "2.4.14",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "qads",
+      "Kind": "recipe",
+      "Version": "5.1.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "fmt",
+      "Kind": "recipe",
+      "Version": "11.1.4",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "kompute",
+      "Kind": "recipe",
+      "Version": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "glfw",
+      "Kind": "recipe",
+      "Version": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "hdilib-vulkan",
+      "Kind": "recipe",
+      "Version": "2.0.1",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Dependency": "umappp",
+      "Kind": "pin",
+      "Version": "v3.3.2",
+      "Required": true
+    }
+  ]
+}

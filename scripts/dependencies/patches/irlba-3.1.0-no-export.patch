@@ -1,0 +1,59 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -14,55 +14,7 @@ add_library(ltla::irlba ALIAS irlba)
+ 
+ target_include_directories(irlba INTERFACE
+     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+-    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/ltla>)
++    )
+ target_compile_features(irlba INTERFACE cxx_std_17)
+ 
+-# Dependencies
+-option(IRLBA_FETCH_EXTERN "Automatically fetch irlba's dependencies." ON)
+-if(IRLBA_FETCH_EXTERN)
+-    add_subdirectory(extern)
+-else()
+-    find_package(Eigen3 5.0.0 CONFIG REQUIRED)
+-    find_package(ltla_aarand 1.0.0 CONFIG REQUIRED)
+-    find_package(ltla_subpar 0.3.1 CONFIG REQUIRED)
+-    find_package(ltla_sanisizer 0.1.0 CONFIG REQUIRED)
+-endif()
+-
+ target_link_libraries(irlba INTERFACE Eigen3::Eigen ltla::aarand ltla::subpar ltla::sanisizer)
+-
+-# Tests
+-if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
+-    option(IRLBA_TESTS "Build irlba's test suite." ON)
+-else()
+-    option(IRLBA_TESTS "Build irlba's test suite." OFF)
+-endif()
+-if(IRLBA_TESTS)
+-    include(CTest)
+-    if(BUILD_TESTING)
+-        add_subdirectory(tests)
+-    endif()
+-endif()
+-
+-# Install
+-install(DIRECTORY include/
+-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/ltla)
+-
+-install(TARGETS irlba
+-    EXPORT irlbaTargets)
+-
+-install(EXPORT irlbaTargets
+-    FILE ltla_irlbaTargets.cmake
+-    NAMESPACE ltla::
+-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/ltla_irlba)
+-
+-configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/Config.cmake.in
+-    "${CMAKE_CURRENT_BINARY_DIR}/ltla_irlbaConfig.cmake"
+-    INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/ltla_irlba)
+-
+-write_basic_package_version_file(
+-    "${CMAKE_CURRENT_BINARY_DIR}/ltla_irlbaConfigVersion.cmake"
+-    COMPATIBILITY SameMajorVersion)
+-
+-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/ltla_irlbaConfig.cmake"
+-    "${CMAKE_CURRENT_BINARY_DIR}/ltla_irlbaConfigVersion.cmake"
+-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/ltla_irlba)

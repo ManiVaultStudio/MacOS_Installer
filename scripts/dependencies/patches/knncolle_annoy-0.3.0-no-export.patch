@@ -1,0 +1,29 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -43,26 +43,3 @@
+     endif() 
+ endif()
+ 
+-# Install
+-install(DIRECTORY include/
+-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/knncolle_annoy)
+-
+-install(TARGETS knncolle_annoy
+-    EXPORT knncolle_annoyTargets)
+-
+-install(EXPORT knncolle_annoyTargets
+-    FILE knncolle_knncolle_annoyTargets.cmake
+-    NAMESPACE knncolle::
+-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/knncolle_knncolle_annoy)
+-
+-configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/Config.cmake.in
+-    "${CMAKE_CURRENT_BINARY_DIR}/knncolle_knncolle_annoyConfig.cmake"
+-    INSTALL_DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/knncolle_knncolle_annoy)
+-
+-write_basic_package_version_file(
+-    "${CMAKE_CURRENT_BINARY_DIR}/knncolle_knncolle_annoyConfigVersion.cmake"
+-    COMPATIBILITY SameMajorVersion)
+-
+-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/knncolle_knncolle_annoyConfig.cmake"
+-    "${CMAKE_CURRENT_BINARY_DIR}/knncolle_knncolle_annoyConfigVersion.cmake"
+-    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/knncolle_knncolle_annoy)

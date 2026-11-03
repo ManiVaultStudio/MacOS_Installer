@@ -1,0 +1,1480 @@
+{
+  "columns": [
+    "Profile ID",
+    "Order",
+    "Group",
+    "Repository",
+    "Ref",
+    "Clone URL",
+    "Enabled"
+  ],
+  "records": [
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 2,
+      "Group": "data_plugin",
+      "Repository": "XSCTreeData",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCTreeData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 3,
+      "Group": "data_plugin",
+      "Repository": "XSCTreeMetaData",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCTreeMetaData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 4,
+      "Group": "plugin",
+      "Repository": "HDF5Loader",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/HDF5Loader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 5,
+      "Group": "plugin",
+      "Repository": "SubsetFromSelectionPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/SubsetFromSelectionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "DifferentialExpressionPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/DifferentialExpressionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 8,
+      "Group": "plugin",
+      "Repository": "GradientSurferPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/GradientSurferPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 9,
+      "Group": "plugin",
+      "Repository": "GradientSurferTransformationPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/GradientSurferTransformationPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 10,
+      "Group": "plugin",
+      "Repository": "LinePlotViewPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/LinePlotViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 11,
+      "Group": "plugin",
+      "Repository": "ProjectAveragesPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ProjectAveragesPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 12,
+      "Group": "plugin",
+      "Repository": "RefinePlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/RefinePlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 13,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 14,
+      "Group": "plugin",
+      "Repository": "ATACControllerPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ATACControllerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 15,
+      "Group": "plugin",
+      "Repository": "ChartLegendViewPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ChartLegendViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 16,
+      "Group": "plugin",
+      "Repository": "SimianViewerPairExpCompPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerPairExpCompPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 17,
+      "Group": "plugin",
+      "Repository": "SimianViewerMultExpCompPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerMultExpCompPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 18,
+      "Group": "plugin",
+      "Repository": "SimianViewerPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 19,
+      "Group": "plugin",
+      "Repository": "XSCPhyTVuPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCPhyTVuPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 20,
+      "Group": "plugin",
+      "Repository": "XSCLoaderPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCLoaderPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 21,
+      "Group": "plugin",
+      "Repository": "XSCClusterRankPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCClusterRankPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 22,
+      "Group": "plugin",
+      "Repository": "XSCGeneDetectPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCGeneDetectPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 23,
+      "Group": "plugin",
+      "Repository": "DE-MultiSpecies",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/DE-MultiSpecies.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 24,
+      "Group": "plugin",
+      "Repository": "ATACViewPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ATACViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 25,
+      "Group": "plugin",
+      "Repository": "GeneSurfer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GeneSurfer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 26,
+      "Group": "plugin",
+      "Repository": "ExtCsvLoader",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExtCsvLoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 27,
+      "Group": "plugin",
+      "Repository": "PcaPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/PcaPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 28,
+      "Group": "plugin",
+      "Repository": "UMAP-Plugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/UMAP-Plugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 29,
+      "Group": "plugin",
+      "Repository": "SparseH5DataAccessPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/SparseH5DataAccessPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 30,
+      "Group": "plugin",
+      "Repository": "SunburstClusterPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/SunburstClusterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Order": 31,
+      "Group": "plugin",
+      "Repository": "ClusterDifferentialExpressionPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterDifferentialExpressionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "release/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 2,
+      "Group": "data_plugin",
+      "Repository": "EphysData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/EphysData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 3,
+      "Group": "data_plugin",
+      "Repository": "CellMorphologyData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/CellMorphologyData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 4,
+      "Group": "plugin",
+      "Repository": "MEView",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/MEView.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 5,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "FeatureExplorer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/FeatureExplorer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 2,
+      "Group": "data_plugin",
+      "Repository": "EphysData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/EphysData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 3,
+      "Group": "data_plugin",
+      "Repository": "CellMorphologyData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/CellMorphologyData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 4,
+      "Group": "plugin",
+      "Repository": "MEView",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/MEView.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 5,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "FeatureExplorer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/FeatureExplorer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "release/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 2,
+      "Group": "data_plugin",
+      "Repository": "XSCTreeData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCTreeData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 3,
+      "Group": "data_plugin",
+      "Repository": "XSCTreeMetaData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCTreeMetaData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 4,
+      "Group": "data_plugin",
+      "Repository": "EphysData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/EphysData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 5,
+      "Group": "data_plugin",
+      "Repository": "CellMorphologyData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/CellMorphologyData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "SparseH5DataAccessPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SparseH5DataAccessPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "HDF5Loader",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/HDF5Loader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 8,
+      "Group": "plugin",
+      "Repository": "MEView",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/MEView.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 9,
+      "Group": "plugin",
+      "Repository": "JupyterPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/JupyterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 10,
+      "Group": "plugin",
+      "Repository": "SubsetFromSelectionPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SubsetFromSelectionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 11,
+      "Group": "plugin",
+      "Repository": "UMAP-Plugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/UMAP-Plugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 12,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 13,
+      "Group": "plugin",
+      "Repository": "SunburstClusterPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SunburstClusterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 14,
+      "Group": "plugin",
+      "Repository": "DifferentialExpressionPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/DifferentialExpressionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 15,
+      "Group": "plugin",
+      "Repository": "ExtCsvLoader",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExtCsvLoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 16,
+      "Group": "plugin",
+      "Repository": "GeneSurfer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GeneSurfer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 17,
+      "Group": "plugin",
+      "Repository": "GradientSurferPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GradientSurferPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 18,
+      "Group": "plugin",
+      "Repository": "GradientSurferTransformationPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GradientSurferTransformationPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 19,
+      "Group": "plugin",
+      "Repository": "LinePlotViewPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/LinePlotViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 20,
+      "Group": "plugin",
+      "Repository": "PcaPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/PcaPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 21,
+      "Group": "plugin",
+      "Repository": "ProjectAveragesPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ProjectAveragesPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 22,
+      "Group": "plugin",
+      "Repository": "RefinePlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/RefinePlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 23,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 24,
+      "Group": "plugin",
+      "Repository": "ProjectionExplorer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ProjectionExplorer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 25,
+      "Group": "plugin",
+      "Repository": "ATACControllerPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ATACControllerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 26,
+      "Group": "plugin",
+      "Repository": "ChartLegendViewPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ChartLegendViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 27,
+      "Group": "plugin",
+      "Repository": "ClusterDifferentialExpressionPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterDifferentialExpressionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 28,
+      "Group": "plugin",
+      "Repository": "SimianViewerPairExpCompPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerPairExpCompPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 29,
+      "Group": "plugin",
+      "Repository": "SimianViewerMultExpCompPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerMultExpCompPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 30,
+      "Group": "plugin",
+      "Repository": "SimianViewerPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 31,
+      "Group": "plugin",
+      "Repository": "XSCPhyTVuPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCPhyTVuPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 32,
+      "Group": "plugin",
+      "Repository": "XSCLoaderPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCLoaderPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 33,
+      "Group": "plugin",
+      "Repository": "XSCClusterRankPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCClusterRankPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 34,
+      "Group": "plugin",
+      "Repository": "XSCGeneDetectPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCGeneDetectPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 35,
+      "Group": "plugin",
+      "Repository": "DE-MultiSpecies",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/DE-MultiSpecies.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Order": 36,
+      "Group": "plugin",
+      "Repository": "ATACViewPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ATACViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "release/1.5.1",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 2,
+      "Group": "plugin",
+      "Repository": "ClusterMeansPlugin",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterMeansPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 3,
+      "Group": "plugin",
+      "Repository": "MeanShiftClustering",
+      "Ref": "release/core_1.5.1/0.7.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/MeanShiftClustering.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 4,
+      "Group": "plugin",
+      "Repository": "PcaPlugin",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/PcaPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 5,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "UMAP-Plugin",
+      "Ref": "release/core_1.5.1/1.4.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/UMAP-Plugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "ExamplePlugins",
+      "Ref": "release/core_1.5.0/1.4",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExamplePlugins.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 8,
+      "Group": "plugin",
+      "Repository": "BinIO",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/BinIO.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 9,
+      "Group": "plugin",
+      "Repository": "CsvWriter",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/CsvWriter.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 10,
+      "Group": "plugin",
+      "Repository": "ClusterIO",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterIO.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 11,
+      "Group": "plugin",
+      "Repository": "ENVILoader",
+      "Ref": "release/core_1.5.1/0.1.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ENVILoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 12,
+      "Group": "plugin",
+      "Repository": "ExtCsvLoader",
+      "Ref": "release/core_1.5.1/0.3.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExtCsvLoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 13,
+      "Group": "plugin",
+      "Repository": "HDF5Loader",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/HDF5Loader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 14,
+      "Group": "plugin",
+      "Repository": "ImageLoaderPlugin",
+      "Ref": "release/core_1.5.1/0.1.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ImageLoaderPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 15,
+      "Group": "plugin",
+      "Repository": "JupyterPlugin",
+      "Ref": "release/core_1.5.1/0.6.2",
+      "Clone URL": "https://github.com/ManiVaultStudio/JupyterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 16,
+      "Group": "plugin",
+      "Repository": "ImageTransformationPlugin",
+      "Ref": "release/core_1.5.1/1.3.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ImageTransformationPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 17,
+      "Group": "plugin",
+      "Repository": "PointDataConversionPlugin",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/PointDataConversionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 18,
+      "Group": "plugin",
+      "Repository": "DimensionsViewerPlugin",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/DimensionsViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 19,
+      "Group": "plugin",
+      "Repository": "Heatmap",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/Heatmap.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 20,
+      "Group": "plugin",
+      "Repository": "ImageViewerPlugin",
+      "Ref": "release/core_1.5.1/0.1.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ImageViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 21,
+      "Group": "plugin",
+      "Repository": "ParallelCoordinatesPlugin",
+      "Ref": "release/core_1.5.1/0.1.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/ParallelCoordinatesPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 22,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Order": 23,
+      "Group": "plugin",
+      "Repository": "SpectralViewPlugin",
+      "Ref": "release/core_1.5.1/1.0.0",
+      "Clone URL": "https://github.com/ManiVaultStudio/SpectralViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 2,
+      "Group": "plugin",
+      "Repository": "ClusterMeansPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterMeansPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 3,
+      "Group": "plugin",
+      "Repository": "MeanShiftClustering",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/MeanShiftClustering.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 4,
+      "Group": "plugin",
+      "Repository": "PcaPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/PcaPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 5,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "UMAP-Plugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/UMAP-Plugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "ExamplePlugins",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExamplePlugins.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 8,
+      "Group": "plugin",
+      "Repository": "BinIO",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/BinIO.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 9,
+      "Group": "plugin",
+      "Repository": "CsvWriter",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/CsvWriter.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 10,
+      "Group": "plugin",
+      "Repository": "ClusterIO",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterIO.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 11,
+      "Group": "plugin",
+      "Repository": "ENVILoader",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ENVILoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 12,
+      "Group": "plugin",
+      "Repository": "ExtCsvLoader",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExtCsvLoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 13,
+      "Group": "plugin",
+      "Repository": "HDF5Loader",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/HDF5Loader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 14,
+      "Group": "plugin",
+      "Repository": "ImageLoaderPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ImageLoaderPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 15,
+      "Group": "plugin",
+      "Repository": "JupyterPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/JupyterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 16,
+      "Group": "plugin",
+      "Repository": "ImageTransformationPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/ImageTransformationPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 17,
+      "Group": "plugin",
+      "Repository": "PointDataConversionPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/PointDataConversionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 18,
+      "Group": "plugin",
+      "Repository": "DimensionsViewerPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/DimensionsViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 19,
+      "Group": "plugin",
+      "Repository": "Heatmap",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/Heatmap.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 20,
+      "Group": "plugin",
+      "Repository": "ImageViewerPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ImageViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 21,
+      "Group": "plugin",
+      "Repository": "ParallelCoordinatesPlugin",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/ParallelCoordinatesPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 22,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "master",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Order": 23,
+      "Group": "plugin",
+      "Repository": "SpectralViewPlugin",
+      "Ref": "main",
+      "Clone URL": "https://github.com/ManiVaultStudio/SpectralViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 1,
+      "Group": "core",
+      "Repository": "core",
+      "Ref": "release/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/core.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 2,
+      "Group": "data_plugin",
+      "Repository": "XSCTreeData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCTreeData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 3,
+      "Group": "data_plugin",
+      "Repository": "XSCTreeMetaData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCTreeMetaData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 4,
+      "Group": "data_plugin",
+      "Repository": "EphysData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/EphysData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 5,
+      "Group": "data_plugin",
+      "Repository": "CellMorphologyData",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/CellMorphologyData.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 6,
+      "Group": "plugin",
+      "Repository": "SparseH5DataAccessPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SparseH5DataAccessPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 7,
+      "Group": "plugin",
+      "Repository": "HDF5Loader",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/HDF5Loader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 8,
+      "Group": "plugin",
+      "Repository": "MEView",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/MEView.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 9,
+      "Group": "plugin",
+      "Repository": "JupyterPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/JupyterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 10,
+      "Group": "plugin",
+      "Repository": "SubsetFromSelectionPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SubsetFromSelectionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 11,
+      "Group": "plugin",
+      "Repository": "UMAP-Plugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/UMAP-Plugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 12,
+      "Group": "plugin",
+      "Repository": "t-SNE-Analysis",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/t-SNE-Analysis.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 13,
+      "Group": "plugin",
+      "Repository": "SunburstClusterPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SunburstClusterPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 14,
+      "Group": "plugin",
+      "Repository": "DifferentialExpressionPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/DifferentialExpressionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 15,
+      "Group": "plugin",
+      "Repository": "ExtCsvLoader",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ExtCsvLoader.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 16,
+      "Group": "plugin",
+      "Repository": "GeneSurfer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GeneSurfer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 17,
+      "Group": "plugin",
+      "Repository": "GradientSurferPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GradientSurferPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 18,
+      "Group": "plugin",
+      "Repository": "GradientSurferTransformationPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/GradientSurferTransformationPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 19,
+      "Group": "plugin",
+      "Repository": "LinePlotViewPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/LinePlotViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 20,
+      "Group": "plugin",
+      "Repository": "PcaPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/PcaPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 21,
+      "Group": "plugin",
+      "Repository": "ProjectAveragesPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ProjectAveragesPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 22,
+      "Group": "plugin",
+      "Repository": "RefinePlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/RefinePlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 23,
+      "Group": "plugin",
+      "Repository": "Scatterplot",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/Scatterplot.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 24,
+      "Group": "plugin",
+      "Repository": "ProjectionExplorer",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ProjectionExplorer.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 25,
+      "Group": "plugin",
+      "Repository": "ATACControllerPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ATACControllerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 26,
+      "Group": "plugin",
+      "Repository": "ChartLegendViewPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ChartLegendViewPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 27,
+      "Group": "plugin",
+      "Repository": "ClusterDifferentialExpressionPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ClusterDifferentialExpressionPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 28,
+      "Group": "plugin",
+      "Repository": "SimianViewerPairExpCompPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerPairExpCompPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 29,
+      "Group": "plugin",
+      "Repository": "SimianViewerMultExpCompPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerMultExpCompPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 30,
+      "Group": "plugin",
+      "Repository": "SimianViewerPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/SimianViewerPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 31,
+      "Group": "plugin",
+      "Repository": "XSCPhyTVuPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCPhyTVuPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 32,
+      "Group": "plugin",
+      "Repository": "XSCLoaderPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCLoaderPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 33,
+      "Group": "plugin",
+      "Repository": "XSCClusterRankPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCClusterRankPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 34,
+      "Group": "plugin",
+      "Repository": "XSCGeneDetectPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/XSCGeneDetectPlugin.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 35,
+      "Group": "plugin",
+      "Repository": "DE-MultiSpecies",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/DE-MultiSpecies.git",
+      "Enabled": true
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Order": 36,
+      "Group": "plugin",
+      "Repository": "ATACViewPlugin",
+      "Ref": "release/core_bican_bg/bican_bg",
+      "Clone URL": "https://github.com/ManiVaultStudio/ATACViewPlugin.git",
+      "Enabled": true
+    }
+  ]
+}

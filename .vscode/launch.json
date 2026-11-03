@@ -1,0 +1,114 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Installer creator",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/installer_app.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Check project setup",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/installer_engine.py",
+      "args": [
+        "check",
+        "${input:projectProfile}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Preview build pipeline",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/installer_engine.py",
+      "args": [
+        "full",
+        "${input:projectProfile}",
+        "--dry-run"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Debug manivault-installer",
+      "type": "lldb-dap",
+      "request": "launch",
+      "program": "${workspaceFolder}/builds/debug/manivault-installer/debug/install/ManiVault Studio.app/Contents/MacOS/ManiVault Studio",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Native build (manivault-installer)",
+      "env": {
+        "MV_DEBUG": "1",
+        "PROJECT_WORKSPACE": "${workspaceFolder}",
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/builds/debug/manivault-installer/debug/install/ManiVault Studio.app/Contents/Frameworks:${env:DYLD_LIBRARY_PATH}"
+      },
+      "stopOnEntry": false
+    },
+    {
+      "name": "Debug cytosplore-installer",
+      "type": "lldb-dap",
+      "request": "launch",
+      "program": "${workspaceFolder}/builds/debug/cytosplore-installer/debug/install/ManiVault Studio.app/Contents/MacOS/ManiVault Studio",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Native build (cytosplore-installer)",
+      "env": {
+        "MV_DEBUG": "1",
+        "PROJECT_WORKSPACE": "${workspaceFolder}",
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/builds/debug/cytosplore-installer/debug/install/ManiVault Studio.app/Contents/Frameworks:${env:DYLD_LIBRARY_PATH}"
+      },
+      "stopOnEntry": false
+    },
+    {
+      "name": "Debug manivault-installer-main",
+      "type": "lldb-dap",
+      "request": "launch",
+      "program": "${workspaceFolder}/builds/debug/manivault-installer-main/debug/install/ManiVault Studio.app/Contents/MacOS/ManiVault Studio",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Native build (manivault-installer-main)",
+      "env": {
+        "MV_DEBUG": "1",
+        "PROJECT_WORKSPACE": "${workspaceFolder}",
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/builds/debug/manivault-installer-main/debug/install/ManiVault Studio.app/Contents/Frameworks:${env:DYLD_LIBRARY_PATH}"
+      },
+      "stopOnEntry": false
+    },
+    {
+      "name": "Debug debug-simple",
+      "type": "lldb-dap",
+      "request": "launch",
+      "program": "${workspaceFolder}/builds/debug/debug-simple/debug/install/ManiVault Studio.app/Contents/MacOS/ManiVault Studio",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "Native build (debug-simple)",
+      "env": {
+        "MV_DEBUG": "1",
+        "PROJECT_WORKSPACE": "${workspaceFolder}",
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/builds/debug/debug-simple/debug/install/ManiVault Studio.app/Contents/Frameworks:${env:DYLD_LIBRARY_PATH}"
+      },
+      "stopOnEntry": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "projectProfile",
+      "type": "pickString",
+      "description": "Choose a project from the installer database",
+      "options": [
+        "cytosplore-patchseq",
+        "cytosplore-viewer",
+        "cytosplore-viewer-master",
+        "debug-simple",
+        "default",
+        "manivault-studio",
+        "manivault-studio-main"
+      ],
+      "default": "manivault-studio"
+    }
+  ]
+}

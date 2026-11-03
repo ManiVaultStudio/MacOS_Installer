@@ -1,0 +1,11 @@
+{
+  "columns": [
+    "Timestamp UTC",
+    "Run ID",
+    "Profile ID",
+    "Level",
+    "Stage",
+    "Message"
+  ],
+  "records": []
+}

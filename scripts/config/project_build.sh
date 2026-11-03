@@ -1,0 +1,21 @@
+#!/bin/bash
+# Defaults shared by core, data-plugin, and plug-in project build stages.
+# Profile values set by installer_engine.py take precedence.
+: "${BUILD_TYPE:=Release}"
+: "${ARCHS:=x86_64;arm64}"
+: "${MIN_MACOS_VERSION:=12.0}"
+: "${QT_VERSION:=6.10.3}"
+: "${QT_DIR:=$SCRIPTS_ROOT/../libraries/qt/$QT_VERSION/macos}"
+: "${QT_CMAKE_DIR:=$QT_DIR/lib/cmake/Qt6}"
+: "${PROJECT_FOLDER_NAME:=${PROFILE_NAME:-default}}"
+: "${BUILDFILES_ROOT:=$SCRIPTS_ROOT/../builds}"
+: "${SOURCE_ROOT:=$SCRIPTS_ROOT/../sources/$PROJECT_FOLDER_NAME}"
+: "${BUILD_ROOT:=$BUILDFILES_ROOT/${PROFILE_NAME:-default}/build/$PROJECT_FOLDER_NAME}"
+: "${INSTALL_DIR:=$BUILDFILES_ROOT/${PROFILE_NAME:-default}/install/$PROJECT_FOLDER_NAME}"
+: "${INSTALL_COPY_DIR:=$BUILDFILES_ROOT/${PROFILE_NAME:-default}/installCopy/$PROJECT_FOLDER_NAME}"
+: "${MANIVAULT_DIR:=$INSTALL_DIR/cmake/mv}"
+: "${PLUGIN_INSTALL_DIR:=$INSTALL_DIR/Plugins}"
+: "${INSTALL_DMG_TEMP_DIR:=$BUILDFILES_ROOT/${PROFILE_NAME:-default}/dmg_temp_content/$PROJECT_FOLDER_NAME}"
+: "${OUTPUT_DIR:=$SCRIPTS_ROOT/../application}"
+export BUILD_TYPE ARCHS MIN_MACOS_VERSION QT_VERSION QT_DIR QT_CMAKE_DIR PROJECT_FOLDER_NAME
+export SOURCE_ROOT BUILD_ROOT INSTALL_DIR INSTALL_COPY_DIR MANIVAULT_DIR PLUGIN_INSTALL_DIR INSTALL_DMG_TEMP_DIR OUTPUT_DIR

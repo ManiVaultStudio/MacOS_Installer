@@ -1,0 +1,18 @@
+warning
+add missing switch cases
+note:
+deprecated
+info:
+remark:
+todo
+hint:
+suggestion
+unused variable
+unused parameter
+unreachable code
+possible loss of data
+conversion
+override
+\^
+\~
+\|

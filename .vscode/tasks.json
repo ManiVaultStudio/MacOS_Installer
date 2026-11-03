@@ -1,0 +1,87 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Installer: check setup",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "scripts/installer_engine.py",
+        "check",
+        "${input:projectProfile}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Installer: preview build",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "scripts/installer_engine.py",
+        "full",
+        "${input:projectProfile}",
+        "--dry-run"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Native build (manivault-installer)",
+      "type": "shell",
+      "command": "./debug/scripts_debugging/debug_project.sh --build-only --arch native manivault-installer",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Native build (cytosplore-installer)",
+      "type": "shell",
+      "command": "./debug/scripts_debugging/debug_project.sh --build-only --arch native cytosplore-installer",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Native build (manivault-installer-main)",
+      "type": "shell",
+      "command": "./debug/scripts_debugging/debug_project.sh --build-only --arch native manivault-installer-main",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Native build (debug-simple)",
+      "type": "shell",
+      "command": "./debug/scripts_debugging/debug_project.sh --build-only --arch native debug-simple",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ],
+  "inputs": []
+}

@@ -1,0 +1,136 @@
+{
+  "columns": [
+    "Name",
+    "Version / commit",
+    "Enabled",
+    "Linkage",
+    "Build Script",
+    "Artifacts JSON",
+    "Runtime Files JSON",
+    "Requires JSON",
+    "Recipe JSON",
+    "Source URL"
+  ],
+  "records": [
+    {
+      "Name": "openmp",
+      "Version / commit": "21.1.2",
+      "Enabled": true,
+      "Linkage": "shared",
+      "Build Script": "build_openmp_universal_updated.sh",
+      "Artifacts JSON": "[\"libraries/openmp-21.1.2/build_universal/lib/libomp.dylib\"]",
+      "Runtime Files JSON": "[\"libraries/openmp-21.1.2/build_universal/lib/libomp.dylib\"]",
+      "Requires JSON": "[]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/llvm/llvm-project.git"
+    },
+    {
+      "Name": "lz4",
+      "Version / commit": "1.9.4",
+      "Enabled": true,
+      "Linkage": "shared",
+      "Build Script": "build_lz4_universal.sh",
+      "Artifacts JSON": "[\"libraries/lz4-1.9.4/build_universal/lib/liblz4.1.dylib\"]",
+      "Runtime Files JSON": "[\"libraries/lz4-1.9.4/build_universal/lib/liblz4.1.dylib\"]",
+      "Requires JSON": "[]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/lz4/lz4.git"
+    },
+    {
+      "Name": "flann",
+      "Version / commit": "1.9.2 (c50f296b0b27e14667d272b37acc63f949b305c4)",
+      "Enabled": true,
+      "Linkage": "shared",
+      "Build Script": "build_flann_universal.sh",
+      "Artifacts JSON": "[\"libraries/flann/build_universal/lib/libflann_cpp.dylib\",\"libraries/flann/build_universal/lib/libflann.dylib\"]",
+      "Runtime Files JSON": "[\"libraries/flann/build_universal/lib/libflann_cpp.dylib\",\"libraries/flann/build_universal/lib/libflann.dylib\"]",
+      "Requires JSON": "[\"openmp\",\"lz4\"]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/flann-lib/flann.git"
+    },
+    {
+      "Name": "hdf5-zlib",
+      "Version / commit": "HDF5 1.14.6 / zlib 1.3.1",
+      "Enabled": true,
+      "Linkage": "static",
+      "Build Script": "build_combined_hdf5_zlib_universal.sh",
+      "Artifacts JSON": "[\"libraries/hdf5-1.14.6/install_universal_static/lib/libhdf5.a\",\"libraries/zlib-1.3.1/build_universal/lib/libz.a\"]",
+      "Runtime Files JSON": "[]",
+      "Requires JSON": "[]",
+      "Recipe JSON": null,
+      "Source URL": null
+    },
+    {
+      "Name": "cups",
+      "Version / commit": "2.4.14",
+      "Enabled": true,
+      "Linkage": "shared",
+      "Build Script": "build_cups_universal.sh",
+      "Artifacts JSON": "[\"libraries/cups-2.4.14/build_universal/lib/libcups.2.dylib\"]",
+      "Runtime Files JSON": "[\"libraries/cups-2.4.14/build_universal/lib/libcups.2.dylib\"]",
+      "Requires JSON": "[]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/OpenPrinting/cups.git"
+    },
+    {
+      "Name": "qads",
+      "Version / commit": "5.1.1",
+      "Enabled": true,
+      "Linkage": "shared",
+      "Build Script": "build_qtadvanceddocking_universal.sh",
+      "Artifacts JSON": "[\"libraries/qads/build_universal/lib/libqtadvanceddocking-qt6.dylib\"]",
+      "Runtime Files JSON": "[\"libraries/qads/build_universal/lib/libqtadvanceddocking-qt6.dylib\"]",
+      "Requires JSON": "[]",
+      "Recipe JSON": "{\"source\":{\"url\":\"https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System.git\",\"ref\":\"5.1.1\"}}",
+      "Source URL": "https://github.com/githubuser0xFFFF/Qt-Advanced-Docking-System.git"
+    },
+    {
+      "Name": "fmt",
+      "Version / commit": "11.1.4",
+      "Enabled": true,
+      "Linkage": "static",
+      "Build Script": "build_fmt_universal.sh",
+      "Artifacts JSON": "[\"libraries/fmt-11.1.4/build_universal/lib/libfmt.a\"]",
+      "Runtime Files JSON": "[]",
+      "Requires JSON": "[]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/fmtlib/fmt.git"
+    },
+    {
+      "Name": "kompute",
+      "Version / commit": "342af81a671099ff590effc30af18551db063917 + tSNE.patch",
+      "Enabled": true,
+      "Linkage": "static",
+      "Build Script": "build_kompute_universal.sh",
+      "Artifacts JSON": "[\"libraries/kompute/install_universal/lib/libkompute.a\"]",
+      "Runtime Files JSON": "[]",
+      "Requires JSON": "[\"fmt\"]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/KomputeProject/kompute.git"
+    },
+    {
+      "Name": "glfw",
+      "Version / commit": "3.4 (7b6aead9fb88b3623e3b3725ebb42670cbe4c579)",
+      "Enabled": true,
+      "Linkage": "static",
+      "Build Script": "build_glfw3_universal.sh",
+      "Artifacts JSON": "[\"libraries/glfw-3.4/build_universal/lib/libglfw3.a\"]",
+      "Runtime Files JSON": "[]",
+      "Requires JSON": "[]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/glfw/glfw.git"
+    },
+    {
+      "Name": "hdilib-vulkan",
+      "Version / commit": "2.0.1",
+      "Enabled": true,
+      "Linkage": "static",
+      "Build Script": "build_hdilibvulkan.sh",
+      "Artifacts JSON": "[\"libraries/HDILibLatestVulkan/install_universal\"]",
+      "Runtime Files JSON": "[]",
+      "Requires JSON": "[\"openmp\",\"lz4\",\"flann\",\"qads\",\"hdf5-zlib\",\"fmt\",\"kompute\",\"glfw\"]",
+      "Recipe JSON": null,
+      "Source URL": "https://github.com/biovault/HDILib.git"
+    }
+  ]
+}

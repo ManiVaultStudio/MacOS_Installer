@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>ManiVault Studio</title>
+    <link rel="stylesheet" href="/ui/styles.css?v=19" />
+  </head>
+  <body class="page-loading">
+    <div
+      class="fetch-indicator"
+      role="status"
+      aria-label="Loading workspace data"
+    ></div>
+    <div class="page-loader" role="status">
+      <div class="loading-orbit"></div>
+      <strong>Opening your workspace</strong
+      ><span class="small">Projects, dependencies and recent activity</span>
+    </div>
+    <div class="load-recovery">
+      <span>Workspace could not refresh.</span
+      ><button class="btn" onclick="location.reload()">Reload page</button>
+    </div>
+    <main class="shell">
+      <header class="top">
+        <div class="brand">
+          <img class="mark" src="/brand-icon.png" alt="" />
+          <div>
+            <strong class="app-name"
+              ><span class="name-manivault">ManiVault</span>
+              <span class="name-studio">Studio</span></strong
+            >
+          </div>
+        </div>
+        <nav class="workspace-tabs" aria-label="Workspace">
+          <button
+            class="tab"
+            data-view="build"
+            title="Build the selected project and manage its configuration and plug-ins."
+            onclick="showView('build')"
+          >
+            Build workflow
+          </button>
+          <button
+            class="tab"
+            data-view="dependencies"
+            title="Install and manage dependencies shared by all projects."
+            onclick="showView('dependencies')"
+          >
+            Dependencies
+          </button>
+          <button
+            class="tab"
+            data-view="installers"
+            title="All installer files in this workspace’s output folder."
+            onclick="showView('installers')"
+          >
+            Installers
+          </button>
+          <button
+            class="tab"
+            data-view="activity"
+            title="Builds, dependency operations and logs from this Mac."
+            onclick="showView('activity')"
+          >
+            Activity
+            <span id="activityIndicator" class="activity-dot" hidden></span>
+          </button>
+        </nav>
+        <span id="headerStatus" class="sr-only" role="status"></span>
+        <div class="top-actions">
+          <button
+            id="createInstallerBtn"
+            class="btn primary"
+            data-conflict
+            onclick="openCreateInstaller()"
+            title="Build a project and create its macOS DMG installer"
+          >
+            Create installer
+          </button>
+          <button
+            id="instanceButton"
+            class="btn instance-button"
+            aria-label="App instances"
+            data-safe-while-busy
+            onclick="openInstances()"
+            title="Running app instances and their ports"
+          >
+            <span aria-hidden="true">▣</span><span id="instanceCount">…</span>
+          </button>
+          <label class="sr-only" for="themePicker">Theme</label>
+          <select
+            id="themePicker"
+            aria-label="Theme"
+            onchange="setTheme(this.value)"
+          >
+            <option value="system">System</option>
+            <optgroup label="Light">
+              <option value="light">Light</option>
+              <option value="pearl">Pearl</option>
+              <option value="sand">Sand</option>
+              <option value="forest">Forest</option>
+              <option value="sunset">Rose</option>
+              <option value="lavender">Lavender</option>
+              <option value="sakura">Sakura</option>
+              <option value="glacier">Glacier</option>
+              <option value="mint">Mint</option>
+              <option value="citrus">Citrus</option>
+              <option value="clay">Clay</option>
+            </optgroup>
+            <optgroup label="Dark">
+              <option value="dark">Dark</option>
+              <option value="ocean">Ocean</option>
+              <option value="graphite">Slate</option>
+              <option value="midnight">Midnight</option>
+              <option value="aurora">Aurora</option>
+              <option value="cobalt">Cobalt</option>
+              <option value="ember">Ember</option>
+              <option value="espresso">Espresso</option>
+              <option value="amethyst">Amethyst</option>
+              <option value="carbon">Carbon</option>
+              <option value="nordic">Nordic</option>
+              <option value="obsidian">Obsidian</option>
+            </optgroup>
+          </select>
+          <button
+            class="btn icon-action"
+            aria-label="Appearance settings"
+            title="Text size, density, surface style and animation settings"
+            data-safe-while-busy
+            onclick="openPreferences()"
+          >
+            ⚙
+          </button>
+        </div>
+      </header>
+      <div class="app-layout">
+        <aside class="workflow-panel">
+          <div class="workflow-fixed">
+            <div class="section-head">
+              <h2>Build workflow</h2>
+              <button
+                id="stop"
+                class="btn danger icon-action"
+                aria-label="Stop operation"
+                title="Stop"
+                onclick="stopRun()"
+                disabled
+              >
+                ■
+              </button>
+            </div>
+            <label class="label" for="project">Build target</label>
+            <select
+              id="project"
+              data-conflict
+              onchange="updateProject()"
+              aria-label="Build target"
+            ></select>
+            <div id="projectMeta" class="project-meta"></div>
+            <div class="options">
+              <select
+                id="mode"
+                data-conflict
+                aria-label="Dependency build mode"
+                title="Build missing dependencies reuses installed libraries. Rebuild is slower and refreshes every dependency. Use installed skips dependency installation."
+              >
+                <option value="if-missing">Build missing dependencies</option>
+                <option value="always">Rebuild dependencies</option>
+                <option value="skip">Use installed dependencies</option>
+              </select>
+              <div class="option-checks">
+                <label
+                  class="check"
+                  title="Recommended for fast repeat builds. Recompile only changed sources; turn off for a clean rebuild."
+                  ><input type="checkbox" id="reuse" data-conflict />
+                  Incremental</label
+                >
+              </div>
+            </div>
+            <details class="build-tuning">
+              <summary>Build options</summary>
+              <label for="buildJobs">Parallel jobs</label
+              ><select
+                id="buildJobs"
+                aria-label="Parallel build jobs"
+                title="Lower parallelism reduces memory use. Use Low memory if a dependency build is killed."
+                onchange="localStorage.setItem('buildJobs',this.value)"
+              >
+                <option value="0">Auto · memory-aware</option>
+                <option value="1">Low memory · 1 job</option>
+                <option value="2">Balanced · 2 jobs</option>
+                <option value="4">Fast · 4 jobs</option>
+                <option value="8">High memory · 8 jobs</option>
+              </select>
+              <label
+                class="check plan-option"
+                title="Rehearse saved project settings without downloading dependencies, compiling, or creating a DMG. A run record is still saved."
+                ><input
+                  type="checkbox"
+                  id="dry"
+                  data-conflict
+                  onchange="updatePlanMode()"
+                />
+                Plan only</label
+              >
+            </details>
+            <section id="prepareActions" class="prepare-actions"></section>
+          </div>
+          <div class="workflow-scroll">
+            <section id="actions" class="actions"></section>
+            <p class="sidebar-note">Builds run locally on this Mac.</p>
+          </div>
+        </aside>
+        <div class="workspace-main">
+          <div class="workspace-toolbar">
+            <div class="workspace-context">
+              <h1 id="workspaceTitle">Build workflow</h1>
+              <span id="workspaceScope">Selected project</span>
+            </div>
+            <nav
+              id="buildSections"
+              class="build-sections"
+              aria-label="Build workflow sections"
+            >
+              <button
+                class="section-tab"
+                data-build-section="workflow"
+                onclick="showBuildSection('workflow')"
+              >
+                Workflow</button
+              ><button
+                class="section-tab"
+                data-build-section="project"
+                onclick="showBuildSection('project')"
+              >
+                Project &amp; plug-ins
+              </button>
+            </nav>
+            <details id="addMenu" class="add-menu">
+              <summary
+                class="btn add-secondary"
+                title="Add a project, plug-in, or dependency to the current workspace"
+              >
+                <span class="add-symbol" aria-hidden="true">＋</span> Add
+              </summary>
+              <div class="add-popover">
+                <button
+                  data-add-scope="build"
+                  data-conflict
+                  onclick="newProject()"
+                >
+                  Project</button
+                ><button
+                  data-add-scope="build"
+                  data-conflict
+                  onclick="newRepository()"
+                >
+                  Plug-in</button
+                ><button
+                  data-add-scope="dependencies"
+                  data-conflict
+                  onclick="newPinnedDependency()"
+                >
+                  Dependency source</button
+                ><button
+                  data-add-scope="dependencies"
+                  data-conflict
+                  onclick="newDependency()"
+                >
+                  Build library
+                </button>
+              </div>
+            </details>
+          </div>
+          <div class="workspace-scroll">
+            <section id="view-build" class="workspace-view" hidden>
+              <div id="buildSummary" class="build-summary"></div>
+              <div
+                id="workflowSteps"
+                class="build-route"
+                aria-label="Build stages"
+                aria-live="polite"
+              ></div>
+              <div id="buildLive"></div>
+              <div class="view-head"><h2>Recent builds</h2></div>
+              <div id="recentBuilds" class="run-list"></div>
+            </section>
+            <section id="view-projects" class="workspace-view">
+              <section class="manager-panel" id="managerPanel">
+                <div class="view-head">
+                  <h1>Projects</h1>
+                  <span id="projectManagerCount" class="small"></span>
+                </div>
+                <div class="project-workspace">
+                  <div class="project-editor">
+                    <div id="projectManagerList"></div>
+                    <div class="view-head">
+                      <h2>Plug-ins</h2>
+                      <span id="repositoryManagerCount" class="small"></span>
+                    </div>
+                    <div class="plugin-toolbar">
+                      <input
+                        id="pluginSearch"
+                        type="search"
+                        placeholder="Search plug-ins"
+                        aria-label="Search project repositories"
+                        oninput="drawRepositoryManager()"
+                      /><select
+                        id="pluginFilter"
+                        aria-label="Filter project repositories"
+                        onchange="drawRepositoryManager()"
+                      >
+                        <option value="all">All types</option>
+                        <option value="plugin">Plug-ins</option>
+                        <option value="data_plugin">Data plug-ins</option>
+                        <option value="core">Core</option>
+                      </select>
+                    </div>
+                    <div id="repositoryManagerList" class="manager-list"></div>
+                    <div id="pluginsPager" class="pager"></div>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <section id="view-dependencies" class="workspace-view" hidden>
+              <section class="dependency-panel">
+                <div class="view-head">
+                  <h1>Dependencies</h1>
+                  <span id="dependencyCount" class="small"></span
+                  ><span class="spacer"></span
+                  ><button
+                    class="btn icon-action"
+                    aria-label="Refresh dependencies"
+                    data-safe-while-busy
+                    title="Refresh"
+                    onclick="refreshDependencies()"
+                  >
+                    ↻
+                  </button>
+                </div>
+                <div class="dependency-toolbar">
+                  <input
+                    id="dependencySearch"
+                    data-safe-while-busy
+                    type="search"
+                    placeholder="Search dependencies"
+                    aria-label="Search dependencies"
+                    oninput="renderDependencies()"
+                  /><select
+                    id="dependencyFilter"
+                    data-safe-while-busy
+                    aria-label="Filter dependency type"
+                    onchange="renderDependencies()"
+                  >
+                    <option value="all">All types</option>
+                    <option value="pin">Sources</option>
+                    <option value="recipe">Libraries</option>
+                  </select>
+                </div>
+                <div
+                  id="dependencySummary"
+                  class="sr-only"
+                  aria-live="polite"
+                ></div>
+                <div id="dependencyList" class="dependency-list"></div>
+              </section>
+            </section>
+            <section id="view-installers" class="workspace-view" hidden>
+              <section class="activity installers glass">
+                <div class="activity-head">
+                  <h2>Installers</h2>
+                  <span id="installerCount" class="small"></span
+                  ><span class="spacer"></span
+                  ><button
+                    class="btn icon-action"
+                    aria-label="Refresh installers"
+                    data-safe-while-busy
+                    title="Refresh installers from the configured Out path"
+                    onclick="refreshInstallers()"
+                  >
+                    ↻
+                  </button>
+                </div>
+                <details class="folder-settings">
+                  <summary>Folders</summary>
+                  <div class="folder-settings-head">
+                    <div>
+                      <div class="label">Installer folders</div>
+                      <div class="small">Output and copy destination</div>
+                    </div>
+                    <button
+                      id="saveFolders"
+                      class="btn primary icon-action"
+                      data-conflict
+                      aria-label="Save installer folder settings"
+                      title="Save folder paths"
+                      onclick="saveFolderSettings()"
+                      disabled
+                    >
+                      ✓
+                    </button>
+                  </div>
+                  <div class="folder-grid">
+                    <div class="folder-field">
+                      <label for="pathOut">Output</label>
+                      <div class="folder-input-row">
+                        <input
+                          class="folder-path"
+                          id="pathOut"
+                          data-conflict
+                          aria-label="Out path"
+                          title="Folder where DMGs are created and listed"
+                        /><button
+                          class="btn"
+                          data-conflict
+                          type="button"
+                          title="Choose Out path in Finder"
+                          aria-label="Choose Out path"
+                          onclick="browsePath('Out path')"
+                        >
+                          Choose</button
+                        ><button
+                          class="btn"
+                          data-conflict
+                          type="button"
+                          title="Open Out path in Finder"
+                          aria-label="Show Out path in Finder"
+                          onclick="openPath('Out path')"
+                        >
+                          ↗
+                        </button>
+                      </div>
+                    </div>
+                    <div class="folder-field">
+                      <label for="pathIn">Copy to</label>
+                      <div class="folder-input-row">
+                        <input
+                          class="folder-path"
+                          id="pathIn"
+                          data-conflict
+                          aria-label="In path"
+                          title="Folder where each new DMG is copied after a successful build"
+                        /><button
+                          class="btn"
+                          data-conflict
+                          type="button"
+                          title="Choose In path in Finder"
+                          aria-label="Choose In path"
+                          onclick="browsePath('In path')"
+                        >
+                          Choose</button
+                        ><button
+                          class="btn"
+                          data-conflict
+                          type="button"
+                          title="Open In path in Finder"
+                          aria-label="Show In path in Finder"
+                          onclick="openPath('In path')"
+                        >
+                          ↗
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+                <div class="installer-toolbar">
+                  <input
+                    id="installerSearch"
+                    data-safe-while-busy
+                    type="search"
+                    aria-label="Search installers"
+                    placeholder="Search installers"
+                    oninput="drawInstallerList()"
+                  /><select
+                    id="installerSort"
+                    data-safe-while-busy
+                    aria-label="Sort installers"
+                    onchange="drawInstallerList()"
+                  >
+                    <option value="newest">Newest first</option>
+                    <option value="oldest">Oldest first</option>
+                    <option value="largest">Largest first</option>
+                  </select>
+                </div>
+                <div class="small path-summary" id="pathSummary"></div>
+                <div
+                  id="installers"
+                  class="run-list installers-list"
+                  aria-live="polite"
+                ></div>
+                <div id="installersPager" class="pager"></div>
+              </section>
+            </section>
+            <section id="view-activity" class="workspace-view" hidden>
+              <section class="activity history glass">
+                <div class="activity-head">
+                  <h2>Activity</h2>
+                  <span id="runCount" class="small"></span
+                  ><span class="spacer"></span
+                  ><button
+                    class="btn"
+                    data-safe-while-busy
+                    data-tip="Copy the selected run summary and all saved messages."
+                    title="Copy the selected run record and its complete log."
+                    onclick="copyRun()"
+                  >
+                    Copy</button
+                  ><button
+                    class="btn icon-action"
+                    aria-label="Refresh activity"
+                    data-safe-while-busy
+                    data-tip="Reload saved runs and log details."
+                    title="Refresh activity"
+                    onclick="refresh()"
+                  >
+                    ↻
+                  </button>
+                </div>
+                <div class="activity-body">
+                  <div id="activityLiveSlot"></div>
+                  <div class="activity-live" id="livePanel">
+                    <div id="status" class="status glass ready">
+                      <i class="pulse"></i
+                      ><span id="statusText" class="status-text">Ready</span
+                      ><span id="statusSub" class="status-sub"></span>
+                    </div>
+                    <section
+                      id="buildProgress"
+                      class="progress-panel glass"
+                      hidden
+                    >
+                      <div class="progress-head">
+                        <span id="progressTitle" class="progress-title"
+                          >Build progress</span
+                        ><button
+                          id="pauseBuild"
+                          class="btn icon-action"
+                          data-conflict
+                          aria-label="Pause build"
+                          title="Pause build"
+                          onclick="togglePause()"
+                          hidden
+                        >
+                          Ⅱ</button
+                        ><span id="progressStage" class="progress-stage"></span>
+                      </div>
+                      <div
+                        class="progress-track"
+                        role="img"
+                        aria-label="Activity indicator — shows work, not a completion percentage"
+                      >
+                        <div class="progress-bar"></div>
+                      </div>
+                      <div class="progress-metrics">
+                        <span id="progressElapsed">Elapsed · 0s</span
+                        ><span
+                          id="progressEta"
+                          title="Estimated from recent successful runs when available; otherwise from step progress"
+                          >Estimate available after the first completed
+                          run</span
+                        ><span id="progressPercent"></span>
+                      </div>
+                      <pre id="progressLog" class="progress-log"></pre>
+                    </section>
+                  </div>
+                  <div class="activity-history-grid">
+                    <div>
+                      <div id="runs" class="run-list"></div>
+                      <div id="runsPager" class="pager"></div>
+                    </div>
+                    <div id="detail" class="detail">
+                      <div class="empty">Select a run.</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <dialog id="dialog" class="modal">
+      <div class="modal-head">
+        <h3 id="dialogTitle"></h3>
+        <button
+          class="btn icon-action"
+          aria-label="Close dialog"
+          onclick="closeDialog()"
+        >
+          ×
+        </button>
+      </div>
+      <form id="form" class="form" onsubmit="saveEntry(event)"></form>
+      <div id="dialogError" class="dialog-error" role="alert" hidden></div>
+      <div class="modal-actions">
+        <button class="btn" data-safe-while-busy onclick="closeDialog()">
+          Cancel</button
+        ><button
+          id="dialogSubmit"
+          class="btn primary"
+          onclick="saveEntry(event)"
+        >
+          Save
+        </button>
+      </div>
+    </dialog>
+    <div id="appTooltip" role="tooltip" hidden></div>
+    <script src="/ui/app.js?v=20" defer></script>
+  </body>
+</html>

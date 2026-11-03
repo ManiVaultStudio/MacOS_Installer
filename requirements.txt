@@ -1,0 +1,2 @@
+openpyxl==3.1.5
+dmgbuild==1.6.7

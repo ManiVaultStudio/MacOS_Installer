@@ -1,0 +1,74 @@
+# macOS and editor files
+.DS_Store
+**/.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Installer runtime state and logs
+.installer_runtime/
+scripts/.locks/
+*.log
+logs/
+.installer_app.json
+.installer_app.lock
+
+# Generated sources, builds and native debug output
+sources/*
+!sources/.gitkeep
+source/
+sourceold/
+builds/*
+!builds/.gitkeep
+buildfiles/
+build/
+build_*/
+debug/*_build/
+debug/*_install/
+debug/*_output/
+debug/unified_xcode/
+
+# Generated dependency checkouts and build outputs; retain the bundled source archive
+libraries/*
+!libraries/hdf5-1.14.6.tar.gz
+!libraries/README.md
+
+# Generated packaging output
+application/
+*.dmg
+*.pkg
+*.app/
+
+# Common temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.bak2
+*.orig
+*.rej
+*.inspect.ndjson
+*.backup*
+# Local activity is separate from shared configuration
+installer_database/history/
+installer_database/.database.lock
+
+installer_database/local/
+installer_database/.transaction.json
+
+installer_database/legacy/
+
+.venv.previous-*/

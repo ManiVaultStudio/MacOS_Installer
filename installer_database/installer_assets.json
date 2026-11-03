@@ -1,0 +1,100 @@
+{
+  "columns": [
+    "Profile ID",
+    "Projects JSON",
+    "App JSON",
+    "App icon",
+    "DMG background",
+    "Folder icons directory",
+    "Apply folder icons",
+    "License directory",
+    "Assets directory",
+    "Installer materials root"
+  ],
+  "records": [
+    {
+      "Profile ID": "cytosplore-viewer-master",
+      "Projects JSON": "installer_materials/projects/cytosplore-viewer-master/projects.json",
+      "App JSON": "installer_materials/projects/cytosplore-viewer-master/app.json",
+      "App icon": "installer_materials/projects/cytosplore-viewer-master/appimage-cytosplore.icns",
+      "DMG background": "installer_materials/projects/cytosplore-viewer-master/dmg-background-cytosplore.png",
+      "Folder icons directory": "installer_materials/projects/cytosplore-viewer-master/folderIcons-cytosplore",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/cytosplore-viewer-master"
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-100",
+      "Projects JSON": "installer_materials/projects/cytosplore-patchseq/projects.json",
+      "App JSON": "installer_materials/projects/cytosplore-patchseq/app.json",
+      "App icon": "installer_materials/projects/cytosplore-patchseq/appimage-cytosplore.icns",
+      "DMG background": "installer_materials/projects/cytosplore-patchseq/dmg-background-cytosplore.png",
+      "Folder icons directory": "installer_materials/projects/cytosplore-patchseq/folderIcons-cytosplore",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/cytosplore-patchseq"
+    },
+    {
+      "Profile ID": "cytosplore-patchseq-master",
+      "Projects JSON": "installer_materials/projects/cytosplore-patchseq-master/projects.json",
+      "App JSON": "installer_materials/projects/cytosplore-patchseq-master/app.json",
+      "App icon": "installer_materials/projects/cytosplore-patchseq-master/appimage-cytosplore.icns",
+      "DMG background": "installer_materials/projects/cytosplore-patchseq-master/dmg-background-cytosplore.png",
+      "Folder icons directory": "installer_materials/projects/cytosplore-patchseq-master/folderIcons-cytosplore",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/cytosplore-patchseq-master"
+    },
+    {
+      "Profile ID": "cytosplore-viewer-500",
+      "Projects JSON": "installer_materials/projects/cytosplore-viewer-500/projects.json",
+      "App JSON": "installer_materials/projects/cytosplore-viewer-500/app.json",
+      "App icon": "installer_materials/projects/cytosplore-viewer-500/appimage-cytosplore.icns",
+      "DMG background": "installer_materials/projects/cytosplore-viewer-500/dmg-background-cytosplore.png",
+      "Folder icons directory": "installer_materials/projects/cytosplore-viewer-500/folderIcons-cytosplore",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/cytosplore-viewer-500"
+    },
+    {
+      "Profile ID": "manivault-151",
+      "Projects JSON": "installer_materials/projects/manivault-studio-151/projects.json",
+      "App JSON": "installer_materials/projects/manivault-studio-151/app.json",
+      "App icon": "installer_materials/projects/manivault-studio-151/appimage-manivault.icns",
+      "DMG background": "installer_materials/projects/manivault-studio-151/dmg-background-manivault.png",
+      "Folder icons directory": "installer_materials/projects/manivault-studio-151/folderIcons-manivault",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/manivault-studio-151"
+    },
+    {
+      "Profile ID": "manivault-master",
+      "Projects JSON": "installer_materials/projects/manivault-studio-main/projects.json",
+      "App JSON": "installer_materials/projects/manivault-studio-main/app.json",
+      "App icon": "installer_materials/projects/manivault-studio-main/appimage-manivault.icns",
+      "DMG background": "installer_materials/projects/manivault-studio-main/dmg-background-manivault.png",
+      "Folder icons directory": "installer_materials/projects/manivault-studio-main/folderIcons-manivault",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/manivault-studio-main"
+    },
+    {
+      "Profile ID": "cytosplore-viewer-2026",
+      "Projects JSON": "installer_materials/projects/cytosplore-viewer-2026/projects.json",
+      "App JSON": "installer_materials/projects/cytosplore-viewer-2026/app.json",
+      "App icon": "installer_materials/projects/cytosplore-viewer-2026/appimage-cytosplore.icns",
+      "DMG background": "installer_materials/projects/cytosplore-viewer-2026/dmg-background-cytosplore.png",
+      "Folder icons directory": "installer_materials/projects/cytosplore-viewer-2026/folderIcons-cytosplore",
+      "Apply folder icons": "true",
+      "License directory": "installer_materials/common/license",
+      "Assets directory": "installer_materials/common/assets",
+      "Installer materials root": "installer_materials/projects/cytosplore-viewer-2026"
+    }
+  ]
+}

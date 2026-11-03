@@ -1,0 +1,19 @@
+{
+  "columns": [
+    "Setting",
+    "Value",
+    "Description"
+  ],
+  "records": [
+    {
+      "Setting": "Out path",
+      "Value": "application",
+      "Description": "Installer output"
+    },
+    {
+      "Setting": "In path",
+      "Value": "installer_inbox",
+      "Description": "Installer copies"
+    }
+  ]
+}
