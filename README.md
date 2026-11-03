@@ -1,6 +1,9 @@
 # ManiVault Studio
 
-The app builds macOS DMG installers from portable JSON configuration. Excel is not required.
+The app builds macOS DMG installers from portable JSON configuration.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/893c983e-b11e-459e-a250-20e3533736e4" />
+
 
 ## Start
 
